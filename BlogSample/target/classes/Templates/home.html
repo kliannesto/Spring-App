@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="general.html::head">
+
+</head>
+
+<body id="readcolor">
+
+<section>
+<nav  th:insert="general.html::navbar">
+</nav>
+<header id="margin">
+
+</header>
+</section>
+
+<section >
+<h4 id="txt" class="text-left"><b> -- --- -------  ~Blog~  ------- -------- ------ ------ ------ -------- -------- ------ ~Qoutes~ ------ ------- -------- ------- --------- -- </b>
+
+ </h4>
+
+<div class="container-fluid">
+<div class="row">
+<div  class="col-md-6 offset-1">
+
+<div  class="card" >
+  <img class="card-img-top" src="../img/lake.jpg"  alt="Card image cap">
+
+<p class="card-text"><b>SUMMER IN ACHENSEE, TIROL: THE MOUNTAIN LAKE OF ADVENTURE</b> </p>
+  <a href="/viewBlogs" class="btn btn-primary"><b>START NOW</b></a>
+  </div>
+  </div>
+  
+  
+  <div  class="col-md-4 ">
+  <div id ="readcard" class="card" >
+  
+  <div class="card-body">
+    <p class="card-text"> </p>
+  </div>
+</div>
+  </div>
+  
+
+</div>
+
+</div>
+</section>
+<div class ="card" th:insert="general.html::footer"></div>
+<div th:insert="general.html::js">
+
+</div>
+</body>
+</html>

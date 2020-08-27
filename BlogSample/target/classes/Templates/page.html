@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">       
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel = "stylesheet" th:href="@{/css/styles.css}">
+     <link rel = "stylesheet" th:href="@{/css/file.css}">
+    <!-- Bootstrap CSS -->
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>    
+
+<body class="background">
+
+<section>
+
+<nav id="page_nav" class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragment="navbar">
+        
+        <a id="nav-label" class="nav-link" href="/admin/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-brand" href="/viewBlogs">Blogs</a>
+        <a class="nav-link" href="/qoutes">Qoutes</a>
+        <a class="nav-link" href="/registration">Register</a>
+        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Places
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+ 
+        <a id="tx" class="nav-link" >Email:</a> 
+        <a class="nav-brand" href="mailto:kliannesto@gmail.com"><b>kliannesto@gmail.com</b></a>        
+    <form id="page_nav">
+    </form>
+</nav>
+
+</section>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head th:insert="general.html::head">
+
+</head>
+
+<body id="readcolor">
+
+	<section>
+		<nav th:insert="general.html::navbar"></nav>
+		<header id="margin"> </header>
+	</section>
+
+	<section>
+		<br> <br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3" th:insert="general.html::menu"></div>
+
+				<div class="col-md-9">
+
+					<div id="card" th:each="Blog:${blogs}">
+
+						<label id="title" for="title"><b> Title :</b></label> <br> <label
+							class="k"><b th:text="${Blog.title}"></b> </label> <img
+							id="spacing" th:src="${'/image/'+ Blog.id}" height="400px"
+							width="900px"> <label id="body" for="body"><b>
+								Content :</b></label>
+						<p th:text="${Blog.body}" /></p>
+
+						<label id="author" for="author"><b> Author :</b></label> <br>
+						<p th:text="${Blog.author}" /></p>
+
+						<label id="datepublished" for="datepublished"><b> Date
+								Published :</b></label>
+						<p th:text="${execInfo.now.time}" /></p>
+
+						<a class="btn btn-primary btn-md" href="#" role="button"
+							th:href="${'/admin/blogs/delete/'+Blog.id}"
+							th:if="${user == Blog.author}"><b>delete</b></a> <a
+							class="btn btn-primary btn-sm disabled" role="button"
+							th:unless="${user == Blog.author}"><b>delete</b></a> <a
+							class="btn btn-secondary btn-md" href="#" role="button"
+							th:href="${'/admin/postedBlogs/edit/'+Blog.id}"
+							th:if="${user == Blog.author}"><b>edit</b></a> <a
+							class="btn btn-secondary btn-sm disabled" role="button"
+							th:unless="${user == Blog.author}"><b>edit</b></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<div class="card" th:insert="general.html::footer"></div>
+	<div th:insert="general.html::js"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+
+.body{
+	background-color: #ff80ff;
+}
+.hello{
+	padding-top: 100px;
+	padding-buttom: 50px;
+	text-align: center;
+	
+}
+#card{
+	border: 1px solid #c0c0c0;
+    padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	background-color:#ffffff ; 
+	
+}
+.card{
+	border: 1px solid blue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 150px;
+    
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left:15px;
+    background-color:#e9e9e9 ;   
+}
+.jumbotron{
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color:#00ff40 ;   
+}
+
+#k{
+	padding-top:30px;
+	color: #ff0080;
+}
+
+#h{
+    
+	padding-top: 20px;
+	padding-buttom: 40px;
+    padding-left: 30px;
+	padding-right: 30px;
+}
+
+.hello{
+	padding-top: 1px;
+	padding-buttom: 5px;
+	text-align: center;
+	
+}
+header{
+	text-align: center;
+	color: #ff80c0;
+    background-image:url("../img/header.png");
+	background-repeat:no-repeat;
+	background-position: center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	
+	background-size:cover;
+	margin-bottom: 0px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+{font-family: Arial, Helvetica, sans-serif;}
+
+input[type=number] {
+    width: 30%;
+    padding: 4px 8px;
+    margin: 8px 4px;
+    display: inline-block;
+    border: 1px solid #ff8080;
+    box-sizing: border-box;
+     background-color: #e798db ;
+      
+}
+button {
+    background-color: #e798db;
+    color: #400000;
+    padding: 6px 4px;
+    border: 10%;
+    
+    cursor: pointer;
+
+}
+#spacing{
+	margin-top: 10px;
+	margin-bottom:15px;
+}
+
+#txt{
+	padding-top:30px;
+	margin-left:0px;
+	color:#539ffd;
+}
+#tx{
+	margin-left:400px;
+	color:#0080ff;
+}
+#nav{
+	padding-right:180px;
+
+	margin-left:340px;
+}
+#nav-label{
+	
+	margin-left:80px;
+}
+#border{
+	border: 1px solid blue;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 200px;
+    
+    margin-top: -20px;
+    margin-bottom: 30px;
+    background-color:#00ff40 ;
+}
+#footer{
+	margin-top: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#e798db;
+}
+.lead{
+	margin-right: 10px;
+	padding-left: 20px;
+	font-size:10px;
+	text-align:center;
+}
+#welcome{
+	color: #00ffff;
+}
+
+#login{
+	background-image:url("../img/background.png");
+	color: #000000;	
+}
+
+#navbar{
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#border{
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#margin{
+	padding-top: 70px;
+	padding-bottom: 95px;
+}
+
+.background{
+	background-image:url("../img/blog.png");
+}
+#page_nav{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#readcard{
+	color:#ffffff;
+	background-image:url("../img/bqoutes.png");
+    border: 1px solid #c0c0c0;
+    padding-top: 40px;
+	padding-bottom: 330px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	background-color:#ffffff ;
+}
+#readcolor{
+	background-color:#d1f3f2 ;
+}
+#qcard{
+	color:#ffffff;
+	background-image:url("../img/bqoutes.png");
+    border: 1px solid #c0c0c0;
+    padding-top: 40px;
+	padding-bottom: 330px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	background-color:#ffffff ;
+}
+
+#qcard1{
+	color:#ffffff;
+	background-image:url("../img/bqoutes1.png");
+    border: 1px solid #c0c0c0;
+    padding-top: 40px;
+	padding-bottom: 330px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	background-color:#ffffff ;
+}
+
+#qcard2{
+	color:#ffffff;
+	background-image:url("../img/bqoutes2.png");
+    border: 1px solid #c0c0c0;
+    padding-top: 40px;
+	padding-bottom: 330px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	background-color:#ffffff ;
+}

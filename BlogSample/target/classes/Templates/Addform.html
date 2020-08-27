@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="general.html::head">
+
+</head>
+
+<body id="readcolor" >
+
+<section>
+<nav   th:insert="general.html::navbar">
+</nav>
+<header id ="margin">
+
+</header>
+</section>
+<br>
+<br>
+<section >
+<div class= "container-fluid">
+<div class="row">
+<div class= "col-md-3"th:insert="general.html::menu">
+</div>
+
+
+<form class="card" method="Post" enctype="multipart/form-data"   th:object="${Blog}"action="/saveBlog" >
+<input type="hidden" th:field="*{id}" name="id">
+<label for ="title" id="title" ><b> Title :</b></label>
+<input type="text" th:field="*{title}" placeholder="Enter Title" name="title" required>
+<br>
+<br>
+<label for ="body" id="body"><b> Create Post :</b> </label>
+<textarea rows = "10" cols="80" th:field= "*{body}"></textarea>
+<br>
+<input type='file' name= 'file' id='file' class = "form-control"placeholder="image" accept="image/*" >
+<br>
+<button type="submit" > Post</button> 
+<br>
+<br>
+
+</form>
+</div>
+</div>
+</section>
+<div class ="card" th:insert="general.html::footer"></div>
+<div th:insert="general.html::js">
+
+</div>
+</body>
+</html>

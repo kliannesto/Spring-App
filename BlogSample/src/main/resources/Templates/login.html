@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">       
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel = "stylesheet" th:href="@{/css/styles.css}">
+     <link rel = "stylesheet" th:href="@{/css/file.css}">
+    <!-- Bootstrap CSS -->
+    <title >Log in Form</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body id="login">
+
+<section >
+<br>
+<br>
+<h1 id="k" class="text-center"><b>Login </b></h1>
+<br>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 offset-2">
+
+<form action="/login" method="Post">
+<div class="card">
+  <div class="form-group">
+  
+    <label for="exampleInputEmail1">E-mail address:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password:</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter password">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input"> 
+      Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+  <div >
+    <label class="form-check-label">Don't have an account?
+        <a class="nav-brand" href="/registration">Register</a>
+    </label>
+  </div>
+  </div>
+</form>
+</div>
+
+</div>
+</div>
+</section>

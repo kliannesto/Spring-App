@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="general.html::head">
+
+</head>
+<body id="login" >
+
+<section >
+<h1 id="k" class="text-center"><b>Registration Form</b></h1>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 offset-2">
+
+
+<form  method="Post" th:object="${user}"action="/registration">
+<div class="card">
+<label for ="firstname" > FirstName :</label>
+<input type="text" th:field="*{name}" placeholder="Enter firstname" name="firstname" required>
+<br>
+<label for ="lastname" > LastName : </label>
+<input type="text" th:field="*{lastName}" placeholder="Enter lastname" name="lastname">
+<br>
+<label for ="email" > E-mail  : </label>
+<input type="text" th:field="*{email}" placeholder="Enter email" name="email">
+<br>
+<label for ="password" > Password : </label>
+<input type="password" th:field="*{password}" placeholder="Enter password" name="password">
+<br>
+<input  class="btn btn-primary btn-md" role="button" type="submit">
+<div class="alert alert-success" role="alert">
+<h4 th:text="${successMessage}" class="alert-heading">
+</h4>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</section>
